@@ -1,0 +1,77 @@
+.workspace { display: grid; gap: 23px; }
+.pageHead { display: flex; justify-content: space-between; align-items: end; }
+.pageHead h1 { margin-top: 6px; font: 57px/.98 Georgia,serif; letter-spacing: -.055em; }
+.pageHead p:not(.overline) { margin-top: 9px; color: var(--muted); font-size: 13px; }
+.overline { color: var(--accent); font-size: 10px; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
+.trackTotal { padding: 7px 11px; border: 1px solid var(--line); border-radius: 20px; color: var(--muted); font-size: 10px; }
+.playerShell { display: grid; grid-template-columns: 205px 1fr; overflow: hidden; min-height: 690px; border: 1px solid var(--line); border-radius: 17px; background: var(--card); box-shadow: 0 16px 45px rgb(0 0 0 / 15%); }
+.library { padding: 21px 13px; border-right: 1px solid var(--line); background: #1d1a24; }
+.libraryTitle { display: flex; justify-content: space-between; align-items: center; padding: 0 8px 17px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.libraryTitle svg { width: 13px; }
+.library > button { width: 100%; display: flex; align-items: center; gap: 10px; padding: 10px 8px; border: 0; border-radius: 8px; color: var(--muted); background: transparent; text-align: left; }
+.library > button:hover,.library > .activeMix { color: var(--ink); background: #302c38; }
+.mixDot { width: 31px; height: 31px; flex: 0 0 31px; border-radius: 7px; }
+.citrus { background: linear-gradient(135deg,#a9bd6b,#414a36); }
+.plum { background: linear-gradient(135deg,#a27ca3,#3d2c4c); }
+.sky { background: linear-gradient(135deg,#73a9b3,#354e5d); }
+.library strong,.library small { display: block; }
+.library strong { font-size: 11px; }
+.library small { margin-top: 2px; color: var(--muted); font-size: 9px; }
+.mainPanel { display: grid; grid-template-rows: auto 1fr auto; min-width: 0; }
+.mixHero { min-height: 213px; display: flex; align-items: center; gap: 25px; padding: 27px 32px; background: linear-gradient(115deg,#28262e,#1e1b25 64%,#302632); }
+.recordArt { position: relative; width: 142px; height: 142px; flex: 0 0 142px; display: grid; place-items: center; overflow: hidden; border-radius: 7px; box-shadow: 0 10px 30px rgb(0 0 0 / 28%); }
+.recordArt::before { position: absolute; inset: 9px; border: 5px solid rgb(18 18 24 / 60%); border-radius: 50%; content: ""; background: repeating-radial-gradient(circle,#24212c 0 4px,#34313c 5px 6px); }
+.recordArt i { width: 43px; height: 43px; position: relative; border: 8px solid #26242d; border-radius: 50%; background: var(--accent); }
+.recordArt b { position: absolute; top: 24px; right: 18px; width: 28px; height: 28px; border-radius: 50%; background: rgb(255 255 255 / 34%); }
+.mixInfo { flex: 1; min-width: 0; }
+.mixInfo > span { color: var(--muted); font-size: 9px; font-weight: 750; letter-spacing: .11em; }
+.mixInfo h2 { margin-top: 8px; font: 36px/1 Georgia,serif; letter-spacing: -.04em; }
+.mixInfo p { margin-top: 8px; color: #c1bbc6; font-size: 12px; }
+.mixTags { display: flex; gap: 8px; margin-top: 18px; }
+.mixTags span { padding: 4px 8px; border: 1px solid #514a59; border-radius: 20px; color: #c1bbc6; font-size: 9px; }
+.playMix { width: 45px; height: 45px; display: grid; place-items: center; border: 0; border-radius: 50%; color: #14150f; background: var(--accent); }
+.playMix:hover { box-shadow: 0 0 0 5px rgb(199 238 113 / 15%); }
+.playMix svg { width: 18px; height: 18px; fill: currentColor; }
+.trackSection { padding: 24px 30px 25px; }
+.trackHeading { display: flex; justify-content: space-between; align-items: end; }
+.trackHeading h2 { font: 22px Georgia,serif; }
+.trackHeading p { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.trackHeading > span { color: var(--muted); font-size: 8px; letter-spacing: .12em; }
+.trackTable { margin-top: 15px; border-top: 1px solid var(--line); }
+.trackRow,.activeTrack { display: grid; grid-template-columns: 25px 28px minmax(100px,1fr) 42px 50px 29px; align-items: center; gap: 8px; min-height: 54px; border-bottom: 1px solid color-mix(in srgb,var(--line) 65%,transparent); }
+.activeTrack { color: var(--accent); background: color-mix(in srgb,var(--accent) 7%,transparent); }
+.trackPlay,.orderButtons button,.removeTrack,.transport button { display: grid; place-items: center; border: 0; color: var(--muted); background: transparent; }
+.trackPlay svg { width: 13px; }
+.trackPlay:hover,.removeTrack:hover,.transport button:hover { color: var(--accent); }
+.trackNumber,.duration { color: var(--muted); font-size: 10px; font-variant-numeric: tabular-nums; }
+.trackText { min-width: 0; display: grid; }
+.trackText strong { overflow: hidden; color: var(--ink); font-size: 11px; text-overflow: ellipsis; white-space: nowrap; }
+.trackText span { margin-top: 2px; color: var(--muted); font-size: 9px; }
+.orderButtons { display: flex; gap: 1px; }
+.orderButtons button { width: 21px; height: 21px; border: 1px solid var(--line); border-radius: 4px; }
+.orderButtons button:hover:not(:disabled) { color: var(--accent); border-color: var(--accent); }
+.orderButtons button:disabled { opacity: .28; }
+.orderButtons svg,.removeTrack svg { width: 12px; }
+.removeTrack { width: 27px; height: 28px; }
+.noTracks { padding: 25px 0; color: var(--muted); font-size: 12px; text-align: center; }
+.addTrack { display: grid; grid-template-columns: 1fr 1fr auto; align-items: end; gap: 9px; margin-top: 16px; }
+.addTrack label { display: grid; gap: 4px; }
+.addTrack label span { color: var(--muted); font-size: 9px; }
+.addTrack input { min-width: 0; height: 35px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: transparent; font-size: 10px; }
+.addTrack button { height: 35px; display: inline-flex; justify-content: center; align-items: center; gap: 5px; padding: 0 10px; border: 0; border-radius: 6px; color: #19181c; background: var(--accent); font-size: 9px; font-weight: 750; white-space: nowrap; }
+.addTrack button svg { width: 13px; }
+.nowPlaying { min-height: 74px; display: grid; grid-template-columns: 39px minmax(95px,1fr) minmax(100px,1.2fr) auto; align-items: center; gap: 12px; padding: 11px 24px; border-top: 1px solid var(--line); background: #1d1a24; }
+.nowIcon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 6px; color: #1a1b13; background: var(--accent); font: 18px Georgia,serif; }
+.nowText { min-width: 0; display: grid; }
+.nowText small { color: var(--accent); font-size: 7px; letter-spacing: .1em; }
+.nowText strong { overflow: hidden; margin-top: 2px; font-size: 10px; text-overflow: ellipsis; white-space: nowrap; }
+.nowText > span { color: var(--muted); font-size: 8px; }
+.progress > div { height: 3px; overflow: hidden; border-radius: 2px; background: #45414a; }
+.progress > div span { display: block; height: 100%; background: var(--accent); }
+.progress small { display: block; margin-top: 4px; color: var(--muted); font-size: 8px; text-align: right; }
+.transport { display: flex; gap: 5px; }
+.transport button { width: 26px; height: 30px; }
+.transport button:nth-child(2) { width: 34px; height: 34px; border-radius: 50%; color: var(--paper); background: #393541; }
+.transport svg { width: 13px; }
+@media(max-width:850px) { .playerShell { grid-template-columns: 1fr; } .library { display: flex; align-items: center; gap: 4px; padding: 12px; overflow-x: auto; border-right: 0; border-bottom: 1px solid var(--line); } .libraryTitle { display: none; } .library > button { width: auto; flex: 0 0 auto; padding: 7px; } .library small { display: none; } .mixDot { width: 25px; height: 25px; flex-basis: 25px; } }
+@media(max-width:620px) { .pageHead { align-items: start; flex-direction: column; gap: 13px; } .pageHead h1 { font-size: 45px; } .playerShell { min-height: 0; } .library > button { padding: 6px; } .library strong { font-size: 9px; } .mixHero { min-height: 170px; gap: 15px; padding: 20px 16px; } .recordArt { width: 92px; height: 92px; flex-basis: 92px; } .mixInfo h2 { font-size: 25px; } .mixInfo p { font-size: 10px; } .mixTags { margin-top: 10px; } .trackSection { padding: 19px 13px; } .trackHeading > span { display: none; } .trackRow,.activeTrack { grid-template-columns: 21px 21px minmax(80px,1fr) 36px 42px 22px; gap: 4px; } .orderButtons button { width: 19px; height: 19px; } .addTrack { grid-template-columns: 1fr 1fr; } .addTrack button { grid-column: 2; } .nowPlaying { grid-template-columns: 34px minmax(100px,1fr) auto; gap: 7px; padding: 10px; } .progress { display: none; } .nowIcon { width: 31px; height: 31px; } .transport { gap: 1px; } }
