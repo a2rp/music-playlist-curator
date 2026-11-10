@@ -16,7 +16,7 @@ Choose a mix, add a song title and artist, then use the up and down arrows to re
 
 ## Data and limits
 
-Track names, artists, playlist assignments, and order are stored in localStorage. Playback position is temporary and resets when the page is reloaded.
+Track names, artists, playlist assignments, and order are stored in localStorage. The app validates saved track data and falls back to the sample list if it cannot be read. Playback position and the selected track are temporary and reset when the page is reloaded.
 
 ## Run locally
 

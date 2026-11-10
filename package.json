@@ -2,6 +2,8 @@
     "name":  "music-playlist-curator",
     "private":  true,
     "version":  "1.0.0",
+    "description":  "Single-page playlist curator with browser-saved mixes, track ordering, and simulated playback controls.",
+    "keywords":  ["react", "vite", "music-playlist", "playlist-manager", "playlist-curator", "localstorage", "browser-storage", "single-page-ui", "frontend-demo"],
     "type":  "module",
     "homepage":  "https://a2rp.github.io/music-playlist-curator",
     "scripts":  {

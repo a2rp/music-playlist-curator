@@ -7,7 +7,6 @@
 .playerShell { display: grid; grid-template-columns: 205px 1fr; overflow: hidden; min-height: 690px; border: 1px solid var(--line); border-radius: 17px; background: var(--card); box-shadow: 0 16px 45px rgb(0 0 0 / 15%); }
 .library { padding: 21px 13px; border-right: 1px solid var(--line); background: #1d1a24; }
 .libraryTitle { display: flex; justify-content: space-between; align-items: center; padding: 0 8px 17px; color: var(--muted); font-size: 10px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
-.libraryTitle svg { width: 13px; }
 .library > button { width: 100%; display: flex; align-items: center; gap: 10px; padding: 10px 8px; border: 0; border-radius: 8px; color: var(--muted); background: transparent; text-align: left; }
 .library > button:hover,.library > .activeMix { color: var(--ink); background: #302c38; }
 .mixDot { width: 31px; height: 31px; flex: 0 0 31px; border-radius: 7px; }
@@ -60,6 +59,7 @@
 .addTrack input { min-width: 0; height: 35px; padding: 0 9px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: transparent; font-size: 10px; }
 .addTrack button { height: 35px; display: inline-flex; justify-content: center; align-items: center; gap: 5px; padding: 0 10px; border: 0; border-radius: 6px; color: #19181c; background: var(--accent); font-size: 9px; font-weight: 750; white-space: nowrap; }
 .addTrack button svg { width: 13px; }
+.storageMessage { margin-top: 9px; color: var(--accent); font-size: 11px; }
 .nowPlaying { min-height: 74px; display: grid; grid-template-columns: 39px minmax(95px,1fr) minmax(100px,1.2fr) auto; align-items: center; gap: 12px; padding: 11px 24px; border-top: 1px solid var(--line); background: #1d1a24; }
 .nowIcon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 6px; color: #1a1b13; background: var(--accent); font: 18px Georgia,serif; }
 .nowText { min-width: 0; display: grid; }
